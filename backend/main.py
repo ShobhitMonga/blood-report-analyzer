@@ -30,7 +30,7 @@ if GEMINI_API_KEY:
 else:
     logger.warning("GEMINI_API_KEY environment variable is missing!")
     
-model = genai.GenerativeModel('gemini-3.8-flash')
+model = genai.GenerativeModel('gemini-3.5-flash-lite')
 
 # Define Pydantic Models for Output Validation
 class Marker(BaseModel):
